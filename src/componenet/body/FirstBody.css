@@ -9,9 +9,51 @@
 }
 .greeting > img {
     position: absolute;
-    width: 1085px;
+    /* width: 1085px; */
     height: 532px;
     top: 812px;
-    left: -565px;
+    left: 0;
 
+}
+.titleBody{
+    color: #002B45;
+    position: absolute;
+    width: 381px;
+    height: 43px;
+    top: 951px;
+    left: 514px;
+    font-family: 'Lora' !important;
+    font-size: 36px!important;
+    font-weight: 700!important;
+    line-height: 43px!important;
+    letter-spacing: 0em!important;
+    text-align: left!important;
+
+}
+.card-body{
+    /* background-color: #002B45;
+    position: absolute;
+    width: 370.61px;
+    height: 100.01px;
+    top: 1050px;
+    left: 520px; */
+
+}
+.card-body .typo{
+    font-family:' Open Sans' !important;
+font-size: 24px !important;
+font-weight: 700 !important;
+line-height: 33px !important;
+letter-spacing: 0em !important;
+text-align: left !important;
+
+
+}
+.typo span{
+    font-family:' Open Sans' !important;
+font-size: 24px !important;
+font-weight: 400 !important;
+line-height: 33px !important;
+letter-spacing: 0em !important;
+text-align: left !important;
 }
