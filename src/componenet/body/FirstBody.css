@@ -1,0 +1,17 @@
+.greeting{
+    position: inherit;
+    width: 1918px;
+    height: 405px;
+    top: 850px;
+    left: 2px;
+    background-color: #FBF6EF;
+    
+}
+.greeting > img {
+    position: absolute;
+    width: 1085px;
+    height: 532px;
+    top: 812px;
+    left: -565px;
+
+}

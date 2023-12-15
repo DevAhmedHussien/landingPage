@@ -1,0 +1,90 @@
+.title{
+    color:#FFFFFF;
+    position: absolute;
+    width: 729px;
+    height: 150px;
+    top: 289px;
+    left: 150px;
+    font-family: 'Lora' !important;
+    font-size: 64px!important;
+    font-weight: 400!important;
+    line-height: 82px!important;
+    letter-spacing: 0em!important;
+    text-align: left!important;
+}
+.kawDiv{
+    position: absolute;
+    width: 424px;
+    height: 78px;
+    top: 487px;
+    left: 151px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.secondTtile{
+    color:#FFFFFF;
+    width: 350px;
+    height: 76px;
+    font-family: 'Open Sans' !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 38px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+}
+.secondTtile > span{
+    font-family: 'Open Sans' !important;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    line-height: 38px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+}
+.kawDiv > img{
+    width: 70px;
+    height: 70px;
+}
+.thirdTtile{
+    color:#FFFFFF;
+    position: absolute;
+    width: 250px;
+    height: 18px;
+    top: 621px;
+    left: 149px;
+    font-family: 'Open Sans' !important;
+    font-size: 14px!important;
+    font-weight: 400!important;
+    line-height: 19px!important;
+    letter-spacing: 0em!important;
+    text-align: center!important;
+    
+}
+.strelka{
+    position: absolute;
+    width: 34px;
+height: 64px;
+top: 633px;
+left: 398px;
+
+}
+.mainButton{
+    position: absolute;
+    width: 203px;
+    height: 58px;
+    top: 654px;
+    left: 150px;
+    padding: 18px 32px 18px 32px;
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #FFFFFF;
+border: 1px solid #FFFFFF;
+background-color: transparent;
+text-align: center!important;
+text-transform: uppercase!important;
+cursor: pointer;
+    
+}
