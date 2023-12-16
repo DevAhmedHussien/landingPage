@@ -6,14 +6,27 @@ import image1 from '../../images/иконка кухни.png'
 import image2 from '../../images/иконка сроки.png';
 import image3 from '../../images/иконка дизайн проект.png';
 import './FirstBody.css'
+import { useRef ,useEffect} from 'react';
+import scrollReveal from "scrollreveal";
+
 import CardsBodyFirst from "./CardsBodyFirst";
 export default function FirstBody(){
+    const photoRef = useRef(null);
+    useEffect(() => {
+        if (photoRef.current )
+            scrollReveal().reveal(photoRef.current  , {
+                origin:'left',
+                distance:'100px',
+                duration:1300,
+                delay:200
+            });
+        }, []);
     return(
     <div>
         <Box component={'div'} className='greeting'>
             <img src={Image} alt='image' />
         </Box>
-        <Typography variant="h3" className="titleBody">Наши преимущества</Typography>
+        <Typography variant="h3" className="titleBody" ref={photoRef}>Наши преимущества</Typography>
         <Divider light 
         sx={{color:'#002B45',width:'1013px',
         height:'1px',position:'absolute',

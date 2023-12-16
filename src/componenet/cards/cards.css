@@ -77,7 +77,7 @@ left: 150px; */
     position: absolute;
     width: 287.28px;
     height: 336px;
-    top: 10%;
+    top: 9%;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -138,8 +138,29 @@ font-weight: 400;
 line-height: 22px;
 letter-spacing: 0em;
 text-align: left;
-cursor: pointer;
+cursor: pointer;transition:  0.3s ease-in-out;
 
+}
+.buttons_1:hover{
+    background: #015B91;
+
+}
+.buttons_1-active{
+    background: #011A2A;
+    width: 161px;
+    height: 58px;
+    padding: 18px 32px 18px 32px;
+    gap: 10px;
+    color: #FBF6EF;
+    text-transform: uppercase;
+    display: block;
+    font-family: Open sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;transition:  0.3s ease-in-out;
 }
 .buttons .buttons_2{
     width: 229px;
@@ -158,4 +179,111 @@ cursor: pointer;
     letter-spacing: 0em;
     text-align: left;
     cursor: pointer;
+    cursor: pointer;transition:  0.3s ease-in-out;
+}
+.buttons_2:hover{
+    color:  #F2A22E;
+    border: 1px solid #F2A22E;
+}
+.buttons_2-active{
+    width: 229px;
+    height: 58px;
+    padding: 18px 32px 18px 32px;
+    gap: 10px;
+    background: #FBF6EF;
+    color:  #011A2A;
+
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid #011A2A;
+    font-family: Open sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    cursor: pointer;transition:  0.3s ease-in-out;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerFooter{
+    width: 253.09px;
+    height: 54.42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.numbers{
+    width: 44.04px;
+    height: 32px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numbers h1 {
+    width: 40px;
+    height: 26px;
+    color: #FFFFFF;
+    font-family: 'Lora' !important;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.numbers h1 span{
+    font-family: Lora !important;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#797979;
+}
+.streliky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.streliky img {
+cursor: pointer;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 194.76px;
+    height: 54.42px;
+    overflow-x: auto;
+    scrollbar-width: thin; /* Set the width of the scrollbar for Firefox */
+    scrollbar-color: #f1f1f1 #888; /* Set the scrollbar color and thumb color for Firefox */
+}
+
+/* WebKit-based browsers (Chrome, Safari) */
+.photos::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.photos::-webkit-scrollbar-track {
+    width: 2px;
+    background-color: #f1f1f1;
+}
+.photos::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 2px;
+}
+.photos img{
+cursor: pointer;
+transition:  0.3s ease-in-out;
+}
+.photos img:hover {
+    scale: 1.05;
+
 }

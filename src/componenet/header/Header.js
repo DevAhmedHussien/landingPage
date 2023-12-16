@@ -1,19 +1,76 @@
 import { Box, Typography } from "@mui/material";
+import { useState ,useRef ,useEffect} from "react";
 import logo from '../../images/лого.png';
 import imgLocation  from '../../images/locationHeader.png';
 import BasicRating from './Rating';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import IconButton from '@mui/material/IconButton';
 import CallRoundedIcon from '@mui/icons-material/CallRounded';
-import Button from '@mui/material/Button';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import scrollReveal from "scrollreveal";
 import './header.css'
 export default function Header(){
+    const [isClicked, setIsClicked] = useState(false);
+    const [isClicked2, setIsClicked2] = useState(false);
+    const [isClickedButton, setIsClicked2Button] = useState(true);
+    const handleClick = () => {
+        setIsClicked(!isClicked);
+        };
+        const handleClick2 = () => {
+            setIsClicked2(!isClicked2);
+        };
+        const handleClickActive = () => {
+            setIsClicked2Button(!isClickedButton);
+        };
+        // const photoRef = useRef(null);
+        // const iconsRef = useRef(null)
+        // const buttonRightref = useRef(null)
+  
+
+        // useEffect(() => {
+        //     if (photoRef.current )
+        //         scrollReveal().reveal(photoRef.current  , {
+        //             origin:'top',
+        //             distance:'100px',
+        //             duration:2000,
+        //             delay:200
+        //         });
+        //     }, []);
+        //     useEffect(() => {
+        //         if (iconsRef.current )
+        //         scrollReveal().reveal(iconsRef.current  , {
+        //             origin:'left',
+        //             distance:'100px',
+        //             duration:2000,
+        //             delay:200
+        //         });
+        //     }, []);
+        //     useEffect(() => {
+        //         if (buttonRightref.current )
+        //         scrollReveal().reveal(buttonRightref.current  , {
+        //             origin:'top',
+        //             distance:'80px',
+        //             duration:2000,
+        //             delay:200
+                
+        //         });
+        //     }, []);
+        //     useEffect(() => {
+        //         if (buttonRightref.current )
+        //         scrollReveal().reveal(buttonRightref.current  , {
+        //             origin:'top',
+        //             distance:'80px',
+        //             duration:2000,
+        //             delay:200
+                
+        //         });
+        //     }, []);
+            
     return (
         <>
         <Box component="div" className="header">
-            <img src={logo} alt="logo" className="logo"/>
-            <Box component="div" className = "navLocation" 
+            <img src={logo} alt="logo" className="logo"// ref ={photoRef} 
+            />
+            <Box component="div" className = "navLocation" //ref = {iconsRef}
             sx={{display:'flex' , justifyContent:'center' , alignItems:'center'}}
             >
                 <img src={imgLocation} alt="navLocation" className="imgLocation"/> 
@@ -32,17 +89,39 @@ export default function Header(){
                 Производство кухонь на заказ
                 <span className="pannerSpan"> Анапа, ул. Крылова, д. 27 </span> </Typography>
         </Box>
-            <IconButton sx={{width:'36px', height:'36px',position:'absolute', top:'45px',left:'1337px',
-                background:'white',borderRadius:"50%"}}>
-                    <TelegramIcon  sx={{fontSize:25 ,color:'#002B45'}} /> 
+            <IconButton 
+            onClick={handleClick}
+            sx={{width:'36px', height:'36px',
+            position:'absolute', top:'45px',left:'1337px',
+            backgroundColor: isClicked ? 'black': '#FBF6EF',borderRadius:"50%",
+            transition: 'background-color 0.3s ease-in-out',
+            '&:hover ': {
+                backgroundColor: '#002B45', // Change the background color on hover
+            }}}>
+                <TelegramIcon  sx={{fontSize:25 ,color: isClicked ? '#FBF6EF' :'#002B45',
+                '&:hover': {
+                    color: '#FBF6EF', // Change the background color on hover
+                }}} /> 
             </IconButton>
-            <IconButton sx={{width:'36px', height:'36px',position:'absolute', top:'45px',left:'1285px',
-                background:'white',borderRadius:"50%"}}>
-                    < CallRoundedIcon  sx={{fontSize:25 ,color:'#002B45'}} /> 
+            <IconButton   className="pho"
+            onClick={handleClick2}
+            sx={{width:'36px', height:'36px',position:'absolute', top:'45px',left:'1285px',
+            backgroundColor: isClicked2 ? 'black': '#FBF6EF',borderRadius:"50%",
+            transition: 'background-color 0.3s ease-in-out',
+                '&:hover': {
+                    backgroundColor: '#002B45', // Change the background color on hover
+                }}}>
+                    < CallRoundedIcon  
+                    sx={{fontSize:25 ,color :isClicked2 ? '#FBF6EF' :'#002B45',
+                    '&:hover': {
+                        color: '#FBF6EF', 
+                    }}} /> 
             </IconButton>  
-            <Typography variant='h6' className="numberPhone">  +7 (988)-311-77-88</Typography>
-            <button variant="outlined" className="button" >Заказать звонок</button>
-           
+            <Typography variant='h6' className= "numberPhone" //ref={buttonRightref}
+            >  +7 (988)-311-77-88</Typography>
+            <button  className={isClickedButton ? "button" : "button-active"}
+            onClick={handleClickActive} >Заказать звонок</button>
+
         </>
     )
 }

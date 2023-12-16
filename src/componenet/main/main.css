@@ -61,13 +61,19 @@
     text-align: center!important;
     
 }
-.strelka{
+#strelka{
     position: absolute;
     width: 34px;
-height: 64px;
-top: 633px;
-left: 398px;
-
+    height: 64px;
+    top: 633px;
+    left: 398px;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+#strelka:hover{
+    transform: rotate(360deg);
+    scale: 1.02;
+    
 }
 .mainButton{
     position: absolute;
@@ -77,14 +83,43 @@ left: 398px;
     left: 150px;
     padding: 18px 32px 18px 32px;
     display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-color: #FFFFFF;
-border: 1px solid #FFFFFF;
-background-color: transparent;
-text-align: center!important;
-text-transform: uppercase!important;
-cursor: pointer;
-    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    text-align: center!important;
+    text-transform: uppercase!important;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+}
+.mainButton-active{
+    position: absolute;
+    width: 203px;
+    height: 58px;
+    top: 654px;
+    left: 150px;
+    padding: 18px 32px 18px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    color: #011A2A;
+    border: 1px solid #011A2A;
+    background-color: transparent;
+    text-align: center!important;
+    text-transform: uppercase!important;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+}
+
+.mainButton:hover  {
+    scale: 1.02;
+    color:  #F2A22E;
+    border: 0.84px solid#F2A22E;
+}
+
+.mainButton:hover + #strelka {
+    transform: rotate(90deg);
 }

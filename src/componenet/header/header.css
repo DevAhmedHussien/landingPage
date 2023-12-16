@@ -13,10 +13,9 @@
 }
 .logo{
     position: absolute;
-    width: 177px;
-    height: 53.18px;
     top: 37px;
     left: 152px;
+    cursor: pointer;
 }
 .navLocation{
     position: relative;
@@ -26,13 +25,13 @@
     left: 363.77px;
 }
 .yandex{
-    color: #ffff;
+    color:#FFFFFF;
     position: static;
     width: 93px;
     height: 17px;
     top: 34px;
     left: 425.48px;
-    font-family: 'Yandex Sans Display'!important;
+    font-family: Yandex Sans Display !important;
     font-size: 14px !important;
     font-weight: 700!important;
     line-height: 17px!important;
@@ -41,8 +40,9 @@
 
 }
 .imgLocation{
-    width: 56.96px;
-    height: 56.96px;
+    /* width: 56.96px;
+    height: 56.96px; */
+    cursor: pointer;
 }
 .rate{
     width: 86.44px;
@@ -81,7 +81,7 @@
     height: 49px;
     top: 39px;
     left: 981px;
-    font-family: 'Open Sans'!important;
+    font-family: Open Sans !important;
     font-size: 14px!important;
     font-weight: 700!important;
     line-height: 19px!important;
@@ -89,7 +89,7 @@
     text-align: left!important;
 }
 .pannerSpan{
-    font-family: 'Playfair Display SC' !important;
+    font-family: Playfair Display SC !important;
     font-size: 14px!important;
     font-weight: 400!important;
     line-height: 18.66px!important;
@@ -103,7 +103,7 @@
     height: 27px;
     top: 50px;
     left: 1393.31px;
-    font-family: 'Open Sans'!important;
+    font-family: Open Sans !important;
     font-size: 20px!important;
     font-weight: 700!important;
     line-height: 27px!important;
@@ -111,7 +111,6 @@
     text-align: left!important;
 }
 .button{
-
 position: absolute;
 width: 183.48px;
 height: 49.08px;
@@ -133,6 +132,77 @@ letter-spacing: 0em!important;
 text-align: center!important;
 text-transform: uppercase!important;
 cursor: pointer;
-
-
+transition:  0.3s ease-in-out;
 }
+.button:hover{
+    scale: 1.02;
+    color:  #F2A22E;
+    border: 0.84px solid#F2A22E;
+}
+.button-active{
+    position: absolute;
+    width: 183.48px;
+    height: 49.08px;
+    top: 39px;
+    left: 1589px;
+    padding: 15.04px 26.74px 15.04px 26.74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8.36px;
+    color:#011A2A;
+    background-color: transparent;
+    border: 0.84px solid #011A2A;
+    font-family: 'Open Sans'!important;
+    font-size: 13.7px!important;
+    font-weight: 400!important;
+    line-height: 19px!important;
+    letter-spacing: 0em!important;
+    text-align: center!important;
+    text-transform: uppercase!important;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+    }
+    @media (max-width: 1680px) {
+        .header{
+        }
+        .logo{
+        }
+        .navLocation{
+        }
+        .yandex{
+        
+        }
+        .imgLocation{
+        }
+        .rate{
+        }
+        .numberRate{
+        }
+        .otziv{
+        }
+        .panner{
+        }
+        .pho{
+        }
+        .pannerSpan{
+        }
+        .numberPhone{
+        }
+        .button{
+        }
+        .button:hover{
+        }
+        .button-active{
+        }
+    }
+    @media (max-width: 1600px) {
+        /* Styles for 1600px and below */
+    }
+    @media (max-width: 1536px ) {
+        /* Styles for 1600px and below */
+    }
+      /* ... Repeat for other breakpoints ... */
+    @media (max-width: 360px) {
+        /* Styles for 360px and below */
+    }
