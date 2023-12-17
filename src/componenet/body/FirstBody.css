@@ -1,16 +1,15 @@
+.mani{
+    background-color: #FBF6EF ;
+    height: 405px;
+}
 .greeting{
     position: inherit;
     width: 1918px;
-    height: 405px;
     top: 850px;
     left: 2px;
-    background-color: #FBF6EF;
-    
 }
 .greeting > img {
     position: absolute;
-    /* width: 1085px; */
-    height: 532px;
     top: 812px;
     left: 0;
 
@@ -30,13 +29,21 @@
     text-align: left!important;
 
 }
-.card-body{
-    /* background-color: #002B45;
+.conCbody{
+    display: flex;
+    align-items: start;
+    height: auto;
+    gap: 66px;
+    flex-wrap: wrap;
     position: absolute;
-    width: 370.61px;
-    height: 100.01px;
-    top: 1050px;
-    left: 520px; */
+    top: 1060px;
+    left: 530px;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
 
 }
 .card-body .typo{
@@ -46,7 +53,6 @@ font-weight: 700 !important;
 line-height: 33px !important;
 letter-spacing: 0em !important;
 text-align: left !important;
-
 
 }
 .typo span{

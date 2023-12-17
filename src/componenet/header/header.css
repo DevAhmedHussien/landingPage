@@ -163,46 +163,4 @@ transition:  0.3s ease-in-out;
     cursor: pointer;
     transition:  0.3s ease-in-out;
     }
-    @media (max-width: 1680px) {
-        .header{
-        }
-        .logo{
-        }
-        .navLocation{
-        }
-        .yandex{
-        
-        }
-        .imgLocation{
-        }
-        .rate{
-        }
-        .numberRate{
-        }
-        .otziv{
-        }
-        .panner{
-        }
-        .pho{
-        }
-        .pannerSpan{
-        }
-        .numberPhone{
-        }
-        .button{
-        }
-        .button:hover{
-        }
-        .button-active{
-        }
-    }
-    @media (max-width: 1600px) {
-        /* Styles for 1600px and below */
-    }
-    @media (max-width: 1536px ) {
-        /* Styles for 1600px and below */
-    }
-      /* ... Repeat for other breakpoints ... */
-    @media (max-width: 360px) {
-        /* Styles for 360px and below */
-    }
+ 

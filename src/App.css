@@ -1,0 +1,581 @@
+
+@media (max-width: 2560px) {
+    .header{
+        width: 100% !important;
+    }
+    /* .logo{
+        left:96px !important;
+    }
+    .navLocation{
+        left: 306.77px !important;
+    }
+    .panner{
+        left: 700px !important;
+    }
+    #pho{
+        left: 1050px !important;
+    }
+    #pho2{
+        left: 1100px !important;
+    }
+    .numberPhone{
+    left: 1168.31px !important;
+    } */
+    .button{
+        left: 1700px !important;
+    }
+    .button-active{
+        left: 1700px !important;
+    }
+    .bgImage{
+        width: 100% !important;
+    }
+    .greeting{
+        width: 100% !important;
+    }
+    #dividerLine{
+        width: 800px!important ;
+    }
+    /* .containerCardName{
+    }
+    .mani{
+        width: 100% !important;
+    }
+    .mainCards_2{
+        top:2100px !important;
+        left: 900px !important;
+    }
+    .mainCards_3{
+        top:2593px !important;
+    }
+    .mainCards_4{
+        top:3100px !important;
+        left: 900px !important;
+    } */
+}
+@media (max-width: 1910px) {
+    .header{
+        width: 100% !important;
+    }
+    .logo{
+        left:96px !important;
+    }
+    .navLocation{
+        left: 306.77px !important;
+    }
+    .panner{
+        left: 700px !important;
+    }
+    #pho{
+        left: 1050px !important;
+    }
+    #pho2{
+        left: 1100px !important;
+    }
+    .numberPhone{
+    left: 1168.31px !important;
+    }
+    .button{
+        left: 1520px !important;
+    }
+    .button-active{
+        left: 1520px !important;
+    }
+    .bgImage{
+        width: 100% !important;
+    }
+    .greeting{
+        width: 100% !important;
+    }
+    #dividerLine{
+        width: 800px!important ;
+    }
+    .containerCardName{
+    }
+    .mani{
+        width: 100% !important;
+    }
+    .mainCards_2{
+        top:2100px !important;
+        left: 900px !important;
+    }
+    .mainCards_3{
+        top:2593px !important;
+    }
+    .mainCards_4{
+        top:3100px !important;
+        left: 900px !important;
+    }
+    .empty{
+        width: 377px !important;
+        height: 615px !important;
+        top: 1220px !important;
+        right: 7% !important;
+    }
+}
+@media (max-width: 1680px) {
+    .header{
+        width: 100% !important;
+    }
+    .logo{
+        left:96px !important;
+    }
+    .navLocation{
+        left: 290.77px !important;
+    }
+    .panner{
+        left: 580px !important;
+    }
+    #pho{
+        left: 913px !important;
+    }
+    #pho2{
+        left: 960px !important;
+    }
+    
+    .numberPhone{
+        left: 1010.31px !important;
+    }
+    .button{
+        left: 1290px !important;
+    }
+    .button-active{
+        left: 1520px !important;
+    }
+    .bgImage{
+        width: 100% !important;
+    }
+    .mani{
+        height: 455px !important;
+    }
+    .greeting{
+        width: 100% !important;
+    }
+    #dividerLine{
+        width: 600px!important ;
+    }
+    .mani{
+        width: 100% !important;
+    }
+    .mainCards_2{
+        top:2100px !important;
+        left: 750px !important;
+    }
+    .mainCards_3{
+        top:2593px !important;
+    }
+    .mainCards_4{
+        top:3100px !important;
+        left: 750px !important;
+    }
+    .empty{
+        width: 307px !important;
+        height: 555px !important;
+        top: 1268px !important;
+        right: 8% !important;
+    }
+}
+@media (max-width: 1600px) {
+    .header{
+        width: 100% !important;
+    }
+    .logo{
+        left:96px!important;
+    }
+    .navLocation{
+        left: 290.77px!important;
+    }
+    .panner{
+        left: 580px!important;
+    }
+    #pho{
+        left: 913px!important;
+    }
+    #pho2{
+        left: 960px!important;
+    }
+    .numberPhone{
+        left: 1010.31px!important;
+    }
+    .button{
+        left: 1290px!important;
+    }
+    .button-active{
+        left: 1290px !important;
+    }
+    .bgImage{
+        width: 100% !important;
+    }
+    .mani{
+        width: 100% !important;
+    }
+    .greeting{
+        width: 100% !important;
+    }
+    #dividerLine{
+        width: 400px!important ;
+    }
+    .mainCards_2{
+        top:2100px !important;
+        left: 700px !important;
+    }
+    .mainCards_3{
+        top:2593px !important;
+    }
+    .mainCards_4{
+        top:3100px !important;
+        left: 700px !important;
+    }
+    .empty{
+        width: 307px !important;
+        height: 555px !important;
+        top: 1290px !important;
+        right: 8% !important;
+    }
+
+}
+@media (max-width: 1536px) {
+    .header{
+        width:100% !important ;
+    }
+    .logo{
+        left:96px !important;
+    }
+    .navLocation{
+        left: 290.77px !important;
+    }
+    .panner{
+        left: 580px !important;
+    }
+    #pho{
+        top: 30px !important;
+        left: 913px  !important;
+    }
+    #pho2{
+        top: 30px !important;
+        left: 960px !important;
+    }
+    
+    .numberPhone{
+        left: 866.31px !important;
+        top: 80px !important;
+    }
+    .button{
+        left: 1218px !important;
+    }
+    .button-active{
+        left: 1218px !important;
+    }
+    .bgImage{
+        width: 100%  !important;
+    }
+    .mani{
+        width: 100% !important;
+    }
+    .greeting{
+        width: 100% !important;
+    }
+    #dividerLine{
+        width: 400px!important ;
+    }
+    .mainCards_2{
+        top:2100px !important;
+        left: 650px !important;
+    }
+    .mainCards_3{
+        top:2593px !important;
+    }
+    .mainCards_4{
+        top:3100px !important;
+        left: 650px !important;
+    }
+    .empty{
+        width: 307px !important;
+        height: 455px !important;
+        top: 1290px !important;
+        right: 5% !important;
+    }
+
+}
+@media (max-width: 1366px) {
+    .header{
+        width: 100%  !important;
+    }
+    .logo{
+        left:96px !important;
+    }
+    .navLocation{
+        left: 290.77px  !important;
+    }
+    .panner{
+        left: 580px !important;
+    }
+    #pho{
+        top: 30px !important;
+        left: 913px !important;
+    }
+    #pho2{
+        top: 30px !important;
+        left: 960px !important;
+    }
+    
+    .numberPhone{
+        left: 866.31px !important;
+        top: 80px !important;
+    }
+    .button{
+        left: 1100px  !important;
+    }
+    .button-active{
+        left: 1100px !important;
+    }
+    .bgImage{
+        width: 100%  !important;
+    }
+    .mani{
+        width: 100% !important;
+    }
+    .mainCards_2{
+        top:2100px !important;
+        left: 500px !important;
+    }
+    .mainCards_3{
+        top:2593px !important;
+    }
+    .mainCards_4{
+        top:3100px !important;
+        left: 500px !important;
+    }
+}
+/* @media (max-width:1280px) {
+    .header{
+    width: 100%;
+    }
+    .logo{
+        left:96px
+    }
+    .navLocation{
+        left: 290.77px;
+    }
+    .panner{
+        left: 480px;
+    }
+    #pho{
+        top: 30px;
+        left: 871px ;
+    }
+    #pho2{
+        top: 30px ;
+    left: 830px;
+    }
+    
+    .numberPhone{
+        left: 780px ;
+        top: 80px;
+    }
+    .button{
+        left: 1017px !important;
+    }
+    .bgImage{
+        width: 100%;
+    }
+} */
+/* @media (max-width:1180px) {
+    .header{
+    width: 100%;
+    }
+    .logo{
+        left:96px
+    }
+    .navLocation{
+        left: 290.77px;
+    }
+    .panner{
+        left: 580px;
+    }
+    #pho{
+        top: 30px;
+        left: 913px;
+    }
+    #pho2{
+        top: 30px;
+        left: 960px;
+    }
+    
+    .numberPhone{
+        left: 866.31px;
+        top: 80px;
+    }
+    .button{
+        left: 900px;
+    }
+    .bgImage{
+        width: 100%;
+    }
+}
+@media (max-width:1024px) {
+    .header{
+    width: 100%;
+    }
+    .logo{
+        left:96px
+    }
+    .navLocation{
+        left: 290.77px;
+    }
+    .panner{
+        left: 580px;
+    }
+    #pho{
+        top: 30px;
+        left: 913px;
+    }
+    #pho2{
+        top: 30px;
+        left: 960px;
+    }
+    
+    .numberPhone{
+        left: 866.31px;
+        top: 80px;
+    }
+    .button{
+        left: 900px;
+    }
+    .bgImage{
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    .header{
+    width: 100%;
+    }
+    .logo{
+        left:96px
+    }
+    .navLocation{
+        left: 290.77px;
+    }
+    .panner{
+        left: 580px;
+    }
+    #pho{
+        top: 30px;
+        left: 913px;
+    }
+    #pho2{
+        top: 30px;
+        left: 960px;
+    }
+    
+    .numberPhone{
+        left: 866.31px;
+        top: 80px;
+    }
+    .button{
+        left: 900px;
+    }
+    .bgImage{
+        width: 100%;
+    }
+}
+@media (max-width:534px) {
+    .header{
+    width: 100%;
+    }
+    .logo{
+        left:96px
+    }
+    .navLocation{
+        left: 290.77px;
+    }
+    .panner{
+        left: 580px;
+    }
+    #pho{
+        top: 30px;
+        left: 913px;
+    }
+    #pho2{
+        top: 30px;
+        left: 960px;
+    }
+    
+    .numberPhone{
+        left: 866.31px;
+        top: 80px;
+    }
+    .button{
+        left: 900px;
+    }
+    .bgImage{
+        width: 100%;
+    }
+}
+@media (max-width:414px) {
+    .header{
+    width: 100%;
+    }
+    .logo{
+        left:96px
+    }
+    .navLocation{
+        left: 290.77px;
+    }
+    .panner{
+        left: 580px;
+    }
+    #pho{
+        top: 30px;
+        left: 913px;
+    }
+    #pho2{
+        top: 30px;
+        left: 960px;
+    }
+    
+    .numberPhone{
+        left: 866.31px;
+        top: 80px;
+    }
+    .button{
+        left: 900px;
+    }
+    .bgImage{
+        width: 100%;
+    }
+}
+@media (max-width:390px) {
+    .header{
+    width: 100%;
+    }
+    .logo{
+        left:96px
+    }
+    .navLocation{
+        left: 290.77px;
+    }
+    .panner{
+        left: 580px;
+    }
+    #pho{
+        top: 30px;
+        left: 913px;
+    }
+    #pho2{
+        top: 30px;
+        left: 960px;
+    }
+    
+    .numberPhone{
+        left: 866.31px;
+        top: 80px;
+    }
+    .button{
+        left: 900px;
+    }
+    .bgImage{
+        width: 100%;
+    }
+} */
+

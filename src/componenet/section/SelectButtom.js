@@ -1,24 +1,19 @@
 
 import * as React from 'react';
 import { useState } from 'react';
-
-import { Typography } from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import './section.css';
-
 export default function Selectbuttom() {
     const [isClicked, setIsClicked] = useState(false);
 const handleChangeClass = ()=>{
     setIsClicked(!isClicked);
-    
 }
 const checkboxStyles = {
     color:'#002B45 !important',
     
     borderRadius: '3px',
     };
-
     const labelStyles = {
         // background:'red',
         color:'#002B45',
@@ -38,7 +33,6 @@ const checkboxStyles = {
         borderRadius: '3px',
 
     };
-
 return (
     <>
     
@@ -86,9 +80,6 @@ return (
     <button className= 'sproc'  >
     сбросить
     </button>
-    
-
 </>
-
 );
 }

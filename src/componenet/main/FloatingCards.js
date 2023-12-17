@@ -8,7 +8,7 @@ export default function FloatingCards({width,height,top,left,title,topCircle,lef
         if (photoRef.current )
             scrollReveal().reveal(photoRef.current  , {
                 origin:'top',
-                distance:'200px',
+                distance:'40px',
                 duration:2000,
                 delay:200
             });
@@ -17,14 +17,14 @@ export default function FloatingCards({width,height,top,left,title,topCircle,lef
             if (iconsRef.current )
             scrollReveal().reveal(iconsRef.current  , {
                 origin:'right',
-                distance:'200px',
+                distance:'40px',
                 duration:2000,
                 delay:200
             });
         }, []);
     return(
         <>
-            <Box componenet='div' ref={photoRef}
+            <Box componenet='div' ref={photoRef} 
             sx={{
                 position:'absolute',
                 width: width,
@@ -37,11 +37,10 @@ export default function FloatingCards({width,height,top,left,title,topCircle,lef
                 zIndex:100,
                 transform:'none',
                 '&:hover': {
-                    // transform: 'rotate(360deg) !important'
                 }
-                // /,cursor:'pointer'
+                
                 }}>
-                <Typography variant="h3"  
+                <Typography variant="h3"   
                 sx={{
                     color: '#FFFFFF',
                     position:'absolute',
@@ -79,8 +78,6 @@ export default function FloatingCards({width,height,top,left,title,topCircle,lef
                         borderRadius:'50%',
                         background: '#FFFFFF',
                         opacity:'68%',
-                        // top:topCircleINNER,
-                        // left:leftCircleINNER,
                         boxShadow: '0px 4px 4px 0px #00000040',
                         zIndex:1000
                         ,cursor:'pointer'}}

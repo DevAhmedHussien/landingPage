@@ -22,7 +22,7 @@ const handleClickActive = () => {
         if (buttonRightref.current )
         scrollReveal().reveal(buttonRightref.current  , {
             origin:'right',
-            distance:'80px',
+            distance:'40px',
             duration:2000,
             delay:200
         
@@ -32,7 +32,7 @@ const handleClickActive = () => {
         if (scrollref.current )
         scrollReveal().reveal(scrollref.current  , {
             origin:'left',
-            distance:'80px',
+            distance:'40px',
             duration:2000,
             delay:200
         
@@ -42,7 +42,7 @@ const handleClickActive = () => {
         if (ahmedRef.current )
         scrollReveal().reveal(ahmedRef.current  , {
             origin:'right',
-            distance:'80px',
+            distance:'40px',
             duration:2000,
             delay:200
         });
@@ -59,9 +59,14 @@ const handleClickActive = () => {
     
     return(
         <>
-        <Box component={'div'} className = "bgImage" 
-            sx={{height:'850.47px',
+        <Box component={'div'} 
+        className ="bgImage" 
+            sx={{
+            height:'850.47px',
             width:'1922.79px',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
             backgroundImage: `url(${main})`}}>
             <Header/>
             <Divider light sx={{bgcolor:'#FFFFFF',width:'191px',height:'1px',position:'absolute',

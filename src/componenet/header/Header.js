@@ -21,56 +21,54 @@ export default function Header(){
         const handleClickActive = () => {
             setIsClicked2Button(!isClickedButton);
         };
-        // const photoRef = useRef(null);
-        // const iconsRef = useRef(null)
-        // const buttonRightref = useRef(null)
-  
-
-        // useEffect(() => {
-        //     if (photoRef.current )
-        //         scrollReveal().reveal(photoRef.current  , {
-        //             origin:'top',
-        //             distance:'100px',
-        //             duration:2000,
-        //             delay:200
-        //         });
-        //     }, []);
-        //     useEffect(() => {
-        //         if (iconsRef.current )
-        //         scrollReveal().reveal(iconsRef.current  , {
-        //             origin:'left',
-        //             distance:'100px',
-        //             duration:2000,
-        //             delay:200
-        //         });
-        //     }, []);
-        //     useEffect(() => {
-        //         if (buttonRightref.current )
-        //         scrollReveal().reveal(buttonRightref.current  , {
-        //             origin:'top',
-        //             distance:'80px',
-        //             duration:2000,
-        //             delay:200
+        const photoRef = useRef(null);
+        const iconsRef = useRef(null)
+        const buttonRightref = useRef(null)
+        useEffect(() => {
+            if (photoRef.current )
+                scrollReveal().reveal(photoRef.current  , {
+                    origin:'top',
+                    distance:'40px',
+                    duration:2000,
+                    delay:200
+                });
+            }, []);
+            useEffect(() => {
+                if (iconsRef.current )
+                scrollReveal().reveal(iconsRef.current  , {
+                    origin:'left',
+                    distance:'40px',
+                    duration:2000,
+                    delay:200
+                });
+            }, []);
+            useEffect(() => {
+                if (buttonRightref.current )
+                scrollReveal().reveal(buttonRightref.current  , {
+                    origin:'top',
+                    distance:'40px',
+                    duration:2000,
+                    delay:200
                 
-        //         });
-        //     }, []);
-        //     useEffect(() => {
-        //         if (buttonRightref.current )
-        //         scrollReveal().reveal(buttonRightref.current  , {
-        //             origin:'top',
-        //             distance:'80px',
-        //             duration:2000,
-        //             delay:200
+                });
+            }, []);
+            useEffect(() => {
+                if (buttonRightref.current )
+                scrollReveal().reveal(buttonRightref.current  , {
+                    origin:'top',
+                    distance:'80px',
+                    duration:2000,
+                    delay:200
                 
-        //         });
-        //     }, []);
+                });
+            }, []);
             
     return (
         <>
         <Box component="div" className="header">
-            <img src={logo} alt="logo" className="logo"// ref ={photoRef} 
+            <img src={logo} alt="logo" className="logo" ref ={photoRef} 
             />
-            <Box component="div" className = "navLocation" //ref = {iconsRef}
+            <Box component="div" className = "navLocation" ref = {iconsRef}
             sx={{display:'flex' , justifyContent:'center' , alignItems:'center'}}
             >
                 <img src={imgLocation} alt="navLocation" className="imgLocation"/> 
@@ -85,11 +83,12 @@ export default function Header(){
                     
                 </div>
             </Box>
+            <div className='container'>
             <Typography variant='h3' className="panner">
                 Производство кухонь на заказ
                 <span className="pannerSpan"> Анапа, ул. Крылова, д. 27 </span> </Typography>
-        </Box>
-            <IconButton 
+        
+            <IconButton id="pho2"
             onClick={handleClick}
             sx={{width:'36px', height:'36px',
             position:'absolute', top:'45px',left:'1337px',
@@ -103,7 +102,7 @@ export default function Header(){
                     color: '#FBF6EF', // Change the background color on hover
                 }}} /> 
             </IconButton>
-            <IconButton   className="pho"
+            <IconButton   id="pho"
             onClick={handleClick2}
             sx={{width:'36px', height:'36px',position:'absolute', top:'45px',left:'1285px',
             backgroundColor: isClicked2 ? 'black': '#FBF6EF',borderRadius:"50%",
@@ -117,11 +116,12 @@ export default function Header(){
                         color: '#FBF6EF', 
                     }}} /> 
             </IconButton>  
-            <Typography variant='h6' className= "numberPhone" //ref={buttonRightref}
+            <Typography variant='h6' className= "numberPhone" ref={buttonRightref}
             >  +7 (988)-311-77-88</Typography>
             <button  className={isClickedButton ? "button" : "button-active"}
             onClick={handleClickActive} >Заказать звонок</button>
-
+            </div>
+        </Box>
         </>
     )
 }

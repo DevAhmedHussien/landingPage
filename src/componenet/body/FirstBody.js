@@ -1,6 +1,6 @@
 
 import { Box, Typography } from "@mui/material";
-import Image from '../../images/image 48.png'
+import image from '../../images/image 48.png'
 import Divider from '@mui/material/Divider';
 import image1 from '../../images/иконка кухни.png'
 import image2 from '../../images/иконка сроки.png';
@@ -22,30 +22,36 @@ export default function FirstBody(){
             });
         }, []);
     return(
-    <div>
+    <div className="mani">
         <Box component={'div'} className='greeting'>
-            <img src={Image} alt='image' />
+            <img src={image} alt="hamada"/>
         </Box>
         <Typography variant="h3" className="titleBody" ref={photoRef}>Наши преимущества</Typography>
-        <Divider light 
+        <Divider light id="dividerLine"
         sx={{color:'#002B45',width:'1013px',
         height:'1px',position:'absolute',
             top:'972px',left:'915px'}} />
-            
-            <CardsBodyFirst width='370.61px' height='100.01px' top='1050px' left='520px' 
+        <div className="conCbody"> 
+        <CardsBodyFirst
+        width='370.61px' height='100.01px' top='1050px' left='520px' 
             src={image1}  widthImg= '70px ' heightImg ='70px' topImg= '1051px ' leftImg = '520px'
                 title='C 2000 г на рынке' titleSpan='наши кухни выбрали 10 000+ семей'
-                widthTitle ='270.02px'  heightTitle='100.01px' topTitle='1050px'leftTitle='620.58px' />
+                widthTitle ='270.02px'  heightTitle='100.01px' topTitle='1050px'leftTitle='620.58px' 
+                />
             
-            <CardsBodyFirst width='357.17px' height='107.15px' top='1050px' left='966px' 
+            <CardsBodyFirst 
+            width='357.17px' height='107.15px' top='1050px' left='966px' 
             src={image2}  widthImg= '60.89px ' heightImg ='70px' topImg= '1051px ' leftImg = '520px'
                 title='Сжатые сроки' titleSpan='изготовление кухни от 20 дней '
                 widthTitle ='257.17px'  heightTitle='107.15px' topTitle='1050px'leftTitle='620.58px' />
             
-            <CardsBodyFirst width='365px' height='71px' top='1050px' left='1398px' 
-            src={image3}  widthImg= '70px' heightImg ='60.67px' topImg= '1051px ' leftImg = '520px'
+            <CardsBodyFirst 
+            width='365px' height='71px' top='1050px' left='1398px'  widthImg= '70px' heightImg ='60.67px' topImg= '1051px ' leftImg = '520px'
+            src={image3} 
                 title='Дизайн проект ' titleSpan='бесплатно за 30 минут'
                 widthTitle ='265px'  heightTitle='71px' topTitle='1050px'leftTitle='620.58px' />
+        </div>
+        
     </div>
     )
 }

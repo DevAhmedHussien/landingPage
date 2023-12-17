@@ -29,16 +29,16 @@ export default function CardsBodyFirst ({width,height,top,left,
     <>
     <Box component={'div'} className="card-body" ref={photoRef}
     sx={{
-        backgroundColor: '',
-        position: 'absolute',
-        width: width,
-        height: height,
-        top: top,
-        left: left,
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'start',
-        gap:3
+        // backgroundColor: '',
+        // position: 'absolute',
+        // width: width,
+        // height: height,
+        // top: top,
+        // left: left,
+        // display:'flex',
+        // justifyContent:'center',
+        // alignItems:'start',
+        // gap:3
     }}>
         <img src={src} alt="" ref={iconsRef}
         style={{
@@ -62,7 +62,7 @@ export default function CardsBodyFirst ({width,height,top,left,
                 <br/>{titleSpan}
             </span>
         </Typography>
-       
+
     </Box>
     </>
     )

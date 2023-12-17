@@ -53,7 +53,7 @@ const data =[
     },
 
 ] 
-export default function Cards({top,left}){
+export default function Cards({top,left,classes}){
 const [clickedImage,setIsClickedImg] = useState({
     id:1,
     src:photo,
@@ -90,7 +90,7 @@ const buttonRightref = useRef(null);
         if (buttonRightref.current )
         scrollReveal().reveal(buttonRightref.current  , {
             origin:'top',
-            distance:'120px',
+            distance:'40px',
             duration:2000,
             delay:200
         
@@ -101,15 +101,17 @@ const buttonRightref = useRef(null);
         if (buttonLefttref.current )
         scrollReveal().reveal(buttonLefttref.current  , {
             origin:'right',
-            distance:'120px',
+            distance:'40px',
             duration:2000,
             delay:200
         
         });
     }, []);
 return(
-    <div className='mainCards'style={{
-        top:top,
+    <>
+< div className={classes} 
+style={{
+        top: top ,
         left:left
     }} >
         <div className="cards" ref={buttonLefttref}>
@@ -183,5 +185,7 @@ return(
         </div>
     </div>
 </div>
+
+    </>
 )
 }
